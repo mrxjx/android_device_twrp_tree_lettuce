@@ -56,3 +56,16 @@ RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO := false
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TARGET_RECOVERY_QCOM_RTC_FIX := true
+
+# Multirom
+DEVICE_RESOLUTION := 768x1280
+MR_INPUT_TYPE := type_a
+MR_INIT_DEVICES := device/yu/lettuce/multirom/mr_init_devices.c
+MR_DEVICE_VARIANTS := YUPHORIA
+MR_DPI := hdpi
+MR_DPI_FONT := 216
+MR_FSTAB := device/yu/lettuce/recovery/etc/twrp.fstab
+MR_KEXEC_MEM_MIN := 0x85000000
+MR_DEVICE_HOOKS := device/yu/lettuce/multirom/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 3
+TARGET_RECOVERY_IS_MULTIROM := true
