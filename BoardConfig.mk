@@ -71,3 +71,6 @@ MR_DEVICE_HOOKS := device/yu/lettuce/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 5
 TARGET_RECOVERY_IS_MULTIROM := true
 MR_PIXEL_FORMAT := "ABGR_8888"
+MR_QCOM_OVERLAY_HEADER := device/yu/lettuce/multirom/mr_qcom_overlay.h
+MR_USE_QCOM_OVERLAY := true
+MR_QCOM_OVERLAY_HEAP_ID_MASK := 1
