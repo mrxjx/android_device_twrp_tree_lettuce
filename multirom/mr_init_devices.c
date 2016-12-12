@@ -11,6 +11,7 @@ const char *mr_init_devices[] =
     "/sys/class/graphics/fb0",
 
     "/sys/block/mmcblk0",
+    "/sys/devices/soc.0",
     "/sys/devices/soc.0/7824900.sdhci",
     "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0",
     "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001",
@@ -26,6 +27,7 @@ const char *mr_init_devices[] =
     "/sys/bus/mmc/drivers/mmcblk",
     "/sys/module/mmc_core",
     "/sys/module/mmcblk",
+    "/sys/block/mmcblk1",
 
     "/sys/devices/soc.0/gpio_keys.63/input*",
     "/sys/devices/virtual/input*",
@@ -47,6 +49,9 @@ const char *mr_init_devices[] =
     "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc1/mmc1:0007",
     "/sys/devices/soc.0/7864900.sdhci/mmc_host/mmc1/mmc1:0007/block/mmcblk1",
     "/sys/devices/soc.0/7864900.sdhci/mmc_host/mmc1/mmc1:0007/block/mmcblk1*",
+
+    // apparently: for qualcomm overlay - /dev/ion
+    "/sys/devices/virtual/misc/ion",
 
     NULL
 };
